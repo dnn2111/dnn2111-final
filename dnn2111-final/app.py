@@ -20,6 +20,10 @@ def hello():
 def engi_homepage():
     return render_template("1006.html")
 
+@app.route("/assignments")
+def assignments():
+    return render_template("assignments.html")
+
 #start the server
 if __name__ == "__main__":
     app.run()
