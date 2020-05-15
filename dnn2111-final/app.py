@@ -1,9 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 21 14:57:17 2020
+# *******************************************************
+# app
+# Name : David Nieto
+# UNI : dnn2111
+# Final
+# ENGI E1006
 
-@author: etill
-"""
+# Uses Flask to create an HTML website.
+# *******************************************************
 
 #import statements
 from flask import Flask, render_template
@@ -23,6 +26,10 @@ def engi_homepage():
 @app.route("/assignments")
 def assignments():
     return render_template("assignments.html")
+
+@app.route("/classes")
+def classes():
+    return render_template("classes.html")
 
 #start the server
 if __name__ == "__main__":
